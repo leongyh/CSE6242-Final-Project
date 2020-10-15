@@ -4,7 +4,9 @@
 
 - Yew Hung Leong
 
-# Getting Started
+# Getting Started - Docker
+From the `docker/` directory, build the image:
+
 Build the image:
 
 ```bash
@@ -25,4 +27,4 @@ bash /start.sh
 
 # Accessing Jupyter Notebook
 
-To access jupyter notebook from the host, go to `0.0.0.0:8080` on the browser.
+To access jupyter notebook from the host, go to `localhost:8888` on the browser.

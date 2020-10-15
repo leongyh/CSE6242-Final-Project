@@ -3,6 +3,10 @@
 .AppleDouble
 .LSOverride
 
+# Data
+!/src/data/.gitkeep
+/src/data/*
+
 # Icon must end with two \r
 Icon
 
