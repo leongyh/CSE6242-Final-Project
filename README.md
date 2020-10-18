@@ -43,3 +43,7 @@ bash /start.sh
 # Accessing Jupyter Notebook
 
 To access jupyter notebook from the host, go to `localhost:8888` on the browser.
+
+# Data
+
+All processed Twitter data is generated via the raw files. Place them in under the `src/data/raw` directory.
