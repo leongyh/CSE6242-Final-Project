@@ -1,31 +1,9 @@
-FROM continuumio/miniconda3
-
-# Install Jupyter
-RUN conda install -c anaconda jupyter
+FROM jupyter/pyspark-notebook
 
 # Install nltk
-RUN conda install -c anaconda nltk
+RUN pip install nltk
 
-# Install numpy
-RUN conda install -c conda-forge numpy
-
-# Install PySpark
-RUN conda install -c conda-forge pyspark
-
-# Install twarc
-RUN pip install twarc
-
-#Install demoji
-RUN pip install demoji
-
-#Install wordsegment
-
-RUN pip install wordsegment
-
-RUN pip install autocorrect
-
-RUN pip install gensim
+# Install pip libraries
+RUN pip install twarc demoji wordsegment autocorrect gensim
 
 COPY ./start.sh /start.sh
-
-CMD ["bin/bash"]
