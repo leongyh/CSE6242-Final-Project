@@ -26,12 +26,12 @@ Return to the repository's root directory and start the container:
 
 **On Linux/MacOS**
 ```bash
-docker run -it --name dva --privileged=true --env-file docker/.env -v $PWD/src:/mnt/host/src -p 8888:8888 dva:latest
+docker run -it --name dva --privileged=true --env-file docker/.env -v $PWD/src:/home/jovyan/work/src -p 8888:8888 dva:latest /bin/sh
 ```
 
 **On Windows**
 ```bash
-docker run -it --name dva --privileged=true --env-file docker/.env -v %cd%/src:/mnt/host/src -p 8888:8888 dva:latest
+docker run -it --name dva --privileged=true --env-file docker/.env -v %cd%/src:/home/jovyan/work/src -p 8888:8888 dva:latest /bin/sh
 ```
 
 While exec'd into the container, start jupyter notebook and other services:
