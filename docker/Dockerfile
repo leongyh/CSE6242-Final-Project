@@ -15,6 +15,17 @@ RUN conda install -c conda-forge pyspark
 # Install twarc
 RUN pip install twarc
 
+#Install demoji
+RUN pip install demoji
+
+#Install wordsegment
+
+RUN pip install wordsegment
+
+RUN pip install autocorrect
+
+RUN pip install gensim
+
 COPY ./start.sh /start.sh
 
 CMD ["bin/bash"]
