@@ -4,6 +4,11 @@ FROM jupyter/pyspark-notebook
 RUN pip install nltk
 
 # Install pip libraries
-RUN pip install twarc demoji wordsegment autocorrect gensim
+RUN pip install autocorrect \
+		demoji \
+		gensim \
+		tableschema \
+		wordsegment \ 
+ 		twarc 
 
 COPY ./start.sh /start.sh
