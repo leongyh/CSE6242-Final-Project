@@ -2,7 +2,7 @@
 
 **Authors**
 
-- Yew Hung Leong
+- Yew Hung Leong, Eugene Itskovich
 
 # Getting Started - Docker
 From the `docker/` directory, build the image:
