@@ -2,7 +2,11 @@
 
 **Authors**
 
-- Yew Hung Leong, Eugene Itskovich
+- Adam Lee
+- David Alejandro Henriquez Bernal
+- Eugene Itskovich
+- Khunsa Hisham
+- Yew Hung Leong
 
 # Getting Started - Docker
 From the `docker/` directory, build the image:
@@ -62,3 +66,15 @@ The pipeline code is executed as Jupyter notebooks found in the `src/code` direc
 4. [2-2_evoMSA_training.ipynb](./src/code/2-2_evoMSA_training.ipynb)
 5. [2-3_LDA_Final.ipynb](./src/code/2-3_LDA_Final.ipynb)
 6. [3_aggregate_data_for_tableau.ipynb](.src/code/3_aggregate_data_for_tableau.ipynb)
+
+Steps 3-5 can be ran in parallel.
+
+# Visualization
+
+The public Tableau dashboard is available [here](https://public.tableau.com/profile/khunsa.hisham#!/vizhome/Choropleth-sentiments-finalNB-ver10/piecharts) and the source is available [here](Choropleth-sentiments-finalNB-ver10.twbx)
+
+# Other Artifacts
+
+- [Feedback Survey Form](./Test_Evaluation_Form-Google_Forms.pdf)
+- [Feedback Survey Results](./Test_Evaluation_Form_(Responses)_-_Form_Responses_1.csv)
+- [Example Test Notebook](./src/example.ipynb)
