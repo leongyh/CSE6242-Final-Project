@@ -46,4 +46,19 @@ To access jupyter notebook from the host, go to `localhost:8888` on the browser.
 
 # Data
 
-All processed Twitter data is generated via the raw files. Place them in under the `src/data/raw` directory.
+Our project bootstraps itself from the following raw datasets. Follow the details below and make sure they are locally available before running the code.
+
+All processed Twitter data is generated via the raw files. Place them under the `src/data/raw` directory. All the raw Tweets are retrievable on [IEEE Dataport](https://ieee-dataport.org/open-access/coronavirus-covid-19-geo-tagged-tweets-dataset#files).
+
+The STS corpus for model training can be found [here](http://help.sentiment140.com/for-students). Place them under the `src/data/sts` directory.
+
+# Pipeline Execution
+
+The pipeline code is executed as Jupyter notebooks found in the `src/code` directory. The steps which they are executed is the number prefix in the filename. The order is as such:
+
+1. [0_twitter_data_retrieval.ipynb](./src/code/0_twitter_data_retrieval.ipynb)
+2. [1_Data_Preprocessing_Final.ipynb](./src/code/1_Data_Preprocessing_Final.ipynb)
+3. [2-1_naive_bayes_training.ipynb](./src/code/2-1_naive_bayes_training.ipynb)
+4. [2-2_evoMSA_training.ipynb](./src/code/2-2_evoMSA_training.ipynb)
+5. [2-3_LDA_Final.ipynb](./src/code/2-3_LDA_Final.ipynb)
+6. [3_aggregate_data_for_tableau.ipynb](.src/code/3_aggregate_data_for_tableau.ipynb)
